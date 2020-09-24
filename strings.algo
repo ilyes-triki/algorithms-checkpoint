@@ -16,7 +16,7 @@ BEGIN
          write("sentence length="x)
      
      
-     FOR j FROM 1 TO length(ch) STEP step  DO
+     FOR j FROM 1 TO length(ch) STEP 1  DO
          count=1
         IF ( ch[j]=" ") THEN
         count:= count +1 ;
@@ -25,7 +25,7 @@ BEGIN
 
     END_FOR
     
-   FOR k FROM 1 TO length(ch) STEP step  DO
+   FOR k FROM 1 TO length(ch) STEP 1  DO
        vowels=0
        IF ( UpCase(ch[k]) in [ A, E, I, O, U, Y, W]) THEN
        vowels:=vowels+1 ; 
